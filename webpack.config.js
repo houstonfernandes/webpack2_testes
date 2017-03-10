@@ -27,15 +27,16 @@ module.exports = {
     ],
     module:{
         rules:[
-		{
-			test:/\.less$/,
-			loaders:['style-loader', 'css-loader', 'less-loader']
-		},
+    		{
+    			test:/\.less$/,
+    			loaders:['style-loader', 'css-loader', 'less-loader']
+    		},
 
-		{
-			test:/\.(woff|woff2|ttf|svg|eot)$/,//arquivos do bootstrap
-			loader:'url-loader'
-		}			
+    		{
+    			test:/\.(woff|woff2|ttf|svg|eot)$/,//arquivos do bootstrap
+    			loader:'url-loader'
+    		}
         ]
+
     }
 }
