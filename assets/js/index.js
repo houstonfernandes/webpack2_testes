@@ -1,4 +1,5 @@
-$=require('jquery');
+$ = require('jquery');
+//import $ from 'jquery';
 require('./app.less');
 
 $(document).ready(function(){

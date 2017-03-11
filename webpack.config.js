@@ -4,7 +4,8 @@ module.exports = {
         vendor:['jquery','bootstrap'],
         app:   './assets/js/index.js',
         novo:  './assets/js/novo.js',
-        novo2: './assets/js/novo2.js'
+        novo2: './assets/js/novo2.js',
+        //novo3: ['./assets/js/novo3_es6.js','./assets/js/novo3.js']
     },
     output: {
         filename: '[name].[chunkhash].bundle.js',
@@ -27,6 +28,14 @@ module.exports = {
     ],
     module:{
         rules:[
+/*            {
+                test:/\.js$/,
+                loader:'babel-loader',
+                exclude: /node_modules/,
+                query:{
+                    presets:['es2015']
+                }
+            },*/
     		{
     			test:/\.less$/,
     			loaders:['style-loader', 'css-loader', 'less-loader']
