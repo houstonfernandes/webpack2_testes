@@ -1,7 +1,5 @@
-$ = require('jquery');
-
 $(document).ready(function(){
-	bt =  $('<button>').addClass('btn').text('botão criado script novo');
-	$('.container').append(bt);
+	var h2 =  $('<h2>').addClass('warning').text('h2 criado script novo import jquery em index.js');
+	$('.container').append(h2);
 
 });
