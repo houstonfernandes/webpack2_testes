@@ -18,13 +18,13 @@ module.exports = {
         new webpack.ProvidePlugin({
             $:'jquery',
             jQuery: 'jquery'
-        }),/*
+        }),
 	new webpack.optimize.UglifyJsPlugin({//compactar
 	    sourceMap:true
 	}),
 	new webpack.LoaderOptionsPlugin({//compactar
             minimize:true
-        })*/
+        })
     ],
     module:{
         rules:[
